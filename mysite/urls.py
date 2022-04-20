@@ -46,4 +46,6 @@ urlpatterns = [
 
     # 路由转发
     path("index/<mobile:mobile>", show),  # 左边mobile：规则 ，右边mobile：传入的关键字参数
+
+    path("users/", include("users.urls"))
 ]
