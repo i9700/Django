@@ -42,7 +42,7 @@ urlpatterns = [
 
     # 路由分发
     path("home/", include("app01.urls")),
-    path("articles", include("articles.urls")),
+    path("articles/", include("articles.urls")),
 
     # 路由转发
     path("index/<mobile:mobile>", show),  # 左边mobile：规则 ，右边mobile：传入的关键字参数
