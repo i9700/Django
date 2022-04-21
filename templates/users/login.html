@@ -5,10 +5,12 @@
     <title>Title</title>
 </head>
 <body>
+{#action可以用相对路径/users/auth#}
 <form action="http://127.0.0.1:8080/users/auth" method="post">
     用户名: <input type="text" name="user">
     密码: <input type="password" name="pwd">
     <input type="submit">
+    <span>{{ msg }}</span>
 </form>
 </body>
 </html>

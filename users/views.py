@@ -67,4 +67,6 @@ def auth(request):
         return redirect("/users/")
     else:
         # return HttpResponse("用户名或者密码错误")
-        return redirect("/users/login")
+        # return redirect("/users/login")
+        msg = "用户名或密码错误"
+        return render(request, "users/login.html", {"msg": msg})  # 返回静态页面时使用
